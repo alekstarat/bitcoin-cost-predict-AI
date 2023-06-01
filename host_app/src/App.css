@@ -37,7 +37,15 @@
   font-size: larger;
   font-style: initial;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  animation: App-logo-spin infinite 0.5s reverse;
   
+}
+
+.Header {
+
+  background-color: #61dafb;
+  display: flex;
+  align-self: flex-start;
 }
 
 @keyframes App-logo-spin {
