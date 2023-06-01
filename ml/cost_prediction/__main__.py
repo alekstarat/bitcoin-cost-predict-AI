@@ -47,12 +47,15 @@ modelD.compile(loss="mse", optimizer=Adam(lr=1e-4))
 
 modelD.summary()
 
-history = modelD.fit(
-                    trainDataGen, 
-                    epochs=50, 
-                    verbose=1, 
-                    validation_data = testDataGen 
-                    )
+modelD.load_weights('ml\cost_prediction\weights.h5')
+
+#history = modelD.fit(
+                    #trainDataGen, 
+                    #epochs=50, 
+                    #verbose=1, 
+                    #validation_data = testDataGen)
+
+
 
 currModel = modelD 
 (predVal, yValUnscaled) = getPred(currModel, xVal[0], yVal[0], yScaler) 
