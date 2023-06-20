@@ -1,2 +1,4 @@
-# bitcoin cost predict AI
- Web-app, including AI soft, that predicts the Bitcoin's cost for near future
+Кирилл бля как наконец сядешь к фронтенду учи
+- D3 (js фреймворк)
+- React (Чисто чтобы понимать как эти графики впихнуть в сайт)
+- SQLite запросы к джанго (либо любая другая бд на твоё усмотрение)
