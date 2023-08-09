@@ -3,8 +3,9 @@ import requests
 import pandas as pd
 import json
 import os
+from TOKEN import TOKEN
 
-bot = telebot.TeleBot('5063930255:AAFXg8x-DiyW_dZc5r3SqQU9JNc8_TuxkrM')
+bot = telebot.TeleBot(TOKEN)
 URL = 'https://api.coinmarketcap.com/data-api/v3/cryptocurrency/detail/chart?id=1&range=1D'
 
 def prepare_graph(data : dict, timestamp : str):
